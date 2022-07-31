@@ -8,17 +8,21 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
     },
     Text: {
+        color: 'black',
         fontSize: 30
+    },
+    color: {
+        color: 'black',
     },
     Button:{
         backgroundColor: '#7e9ebe',
-         padding: '15pt 25pt',
          borderRadius: 5,
          width: 200,
          height: 50,
          margin: 10,
          alignItems: 'center',
-         justifyContent: 'center'
+         justifyContent: 'center',
+         color: 'black'
     }
 });
 

@@ -4,6 +4,7 @@ import WelcomeScreen from '../screens/welcome'
 import RegionScreen from '../screens/RegionList'
 import CustomerList from '../screens/CustomerList'
 import CustomerDetail from '../screens/CustomerDetail'
+import CustomerForm from '../screens/CustomerForm'
 
 
 
@@ -32,6 +33,11 @@ export default function Navigation(){
                 <Stack.Screen
                     name='Detail'
                     component={CustomerDetail}>
+                </Stack.Screen>
+
+                <Stack.Screen
+                    name='form'
+                    component={CustomerForm}>
                 </Stack.Screen>
 
             </Stack.Navigator>
