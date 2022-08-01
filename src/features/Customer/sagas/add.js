@@ -18,7 +18,7 @@ export function *takeAddCustomer(action) {
             ...fields,
             id: res.length+1
         })
-        yield delay(500)
+        yield delay(500)    
         set('CUSTOMER_KEY', res)
         yield put(actions.createCustomerResult(res))
     } catch(e){

@@ -9,7 +9,6 @@ export default function Customer({region}) {
 
     const {navigate} = useNavigation()
     const cust = useListCustomer() === null ? [] : useListCustomer()
-    console.log(cust, region)
 
    
   return (
