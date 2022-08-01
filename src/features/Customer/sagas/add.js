@@ -9,7 +9,9 @@ export function *watchAddCustomer() {
 export function *takeAddCustomer(action) {
     try{
         const fields = yield select(state => state.customer.form.fields)
-        const customers = yield select(state => state.customer.list.customers)
+        let customers = yield select(state => state.customer.list.customers)
+
+        customers === null ? customers = [] : customers = customers
 
         const res = [...customers]
         res.push({

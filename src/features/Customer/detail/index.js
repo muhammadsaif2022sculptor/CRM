@@ -17,10 +17,10 @@ export default function Customer({id}) {
       cust.id === id && <View key={'detail' + cust.id}>
         <Text>Id: {id}</Text>
         <Text>Name: {cust.name}</Text>
-        <Text>Last Name: {cust.lName}</Text>
+        <Text>Last Name: {cust.lname}</Text>
         <Text>Region: {cust.region}</Text>
       <Button title='Edit' onPress={() => navigate('form', {type:'edit', id: cust.id})}></Button>
-      <Reminder name={cust.name + cust.lName} region={cust.region}/>
+      <Reminder name={'' + cust.name + ' ' + cust.lname} region={cust.region}/>
   </View>
     ))}
     </View>

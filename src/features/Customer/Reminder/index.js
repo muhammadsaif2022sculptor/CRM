@@ -8,7 +8,7 @@ const onSubmit = (seconds, name, region) => {
   const schedulingOptions = {
     content: {
       title: `Reminder !! `,
-      body: 'Please contact' + name + 'from' + region + 'region',
+      body: `Please contact ${name} from ${region} region`,
       sound: true,
       priority: Notifications.AndroidNotificationPriority.HIGH,
       color: 'blue'

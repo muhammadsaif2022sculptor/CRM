@@ -1,19 +1,17 @@
 import { TouchableOpacity, View, Text } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import style from './style';
-import {useListCustomer} from '../hooks'
+import {useListCustomer, useEditCustomerStatus} from '../hooks'
 import { useEffect } from 'react';
 
 
 export default function Customer({region}) {
 
     const {navigate} = useNavigation()
-    const cust = useListCustomer()
+    const cust = useListCustomer() === null ? [] : useListCustomer()
+    console.log(cust, region)
 
-    useEffect(() => {
-        console.log(cust, region)
-      },[])
-
+   
   return (
     <View>
         {cust && cust.map(c => (
